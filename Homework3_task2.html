@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const n = 10;
+        let arr = new Array(n);
+        for (let i = 0; i < arr.length; i += 1) { 
+            arr[i] = Math.round(Math.random()*9); 
+        }
+        console.log("Изначальный массив: ");
+        for (let i = 0; i < arr.length; i += 1) {
+            console.log(arr[i]);
+        }
+        console.log("Массив, отсортированный в обратном порядке");
+            arr.sort();
+            arr.reverse();
+        for (let i = 0; i < arr.length; i += 1) {
+            console.log(arr[i]);
+        }
+
+    </script>
+</body>
+</html>
